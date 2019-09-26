@@ -1,5 +1,5 @@
 ﻿using System;
-using.System.Collections.Generic;
+// using.System.Collections.Generic;
 
 namespace Adventure
 {
@@ -21,18 +21,35 @@ namespace Adventure
          Console.WriteLine("You woke up on an island. You feel hungry and thirsty. What do you do?");
          string firstLevel = Console.ReadLine();
 
-        if (firstLevel.ToUpper() == "EAT FOOD") 
-        {
-           
-        }
-        else if (firstLevel.ToUpper() == "DRINK WATER" || firstLevel.ToUpper() == "USE BOTTLE" || firstLevel.ToUpper() == "TAKE WATER")
-        {
+        //  game.GetStatus();
+        Console.WriteLine(game.GetStatus());
 
-        }
-        else 
-        {
-            
-        }
+        // if (firstLevel.ToUpper() == "EAT MEAL") 
+        // {
+        //    game.SetEatMeal();
+        //    game.SetTurnEnd();
+        // }
+        // else if (firstLevel.ToUpper() == "EAT SNACK")
+        // {
+
+        // }
+        // else if (firstLevel.ToUpper() == "DRINK WATER")
+        // {
+        //     game.SetDrinkWater();
+        //     game.SetTurnEnd();
+        // }
+        // else if (firstLevel.ToUpper() == "BUILD SHELTER" || firstLevel.ToUpper() == "FIND SHELTER" || firstLevel.ToUpper() == "CREATE SHELTER" || firstLevel.ToUpper() == "MAKE SHELTER" || firstLevel.ToUpper() == "SHELTER" || firstLevel.ToUpper() == "BUILD SHELTER") 
+        // {
+        //     // game.SetTurnEnd();
+        //     // game.newInventory();
+        //     // game.SetRest();
+        // }
+        // else
+        // {
+        //     Console.WriteLine("Made a wrong or unavailable decision, as a result you are loosing health.");
+        //     game.SetTurnEnd();
+        // }
+
         }
     }
 }

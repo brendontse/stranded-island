@@ -45,6 +45,7 @@ namespace Adventure
         return _stamina;
     }
 
+
     public int GetMeal()
     {
         return _meal;
@@ -88,9 +89,20 @@ namespace Adventure
         _foodLevel -= 10;
         _waterLevel -= 15;
         _stamina -= 10;
+        
     }
     
-    public void Set
+    public string GetStatus()
+    {
+        string food = GetFoodLevel().ToString();
+        string water = GetWaterLevel().ToString();
+        string stamina = GetStamina().ToString();
+
+        string status = "Your current food level is " + food + ", your water level is " + water + ", and your stamina is " + stamina + ".";
+
+        return status;
+        // Console.WriteLine(status);
+    }
 
     }
 
